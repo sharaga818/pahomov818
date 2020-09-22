@@ -1,0 +1,34 @@
+1)
+var x, y, b: integer;
+begin
+    write ('x=');
+    readln (x);
+    write ('y=');
+    readln (y);
+ 
+    writeln ('x = ', x, ', y = ', y);
+    writeln ('заменяем');
+ 
+    b := x;
+    x := y;
+    y := b;
+ 
+    writeln ('x = ', x, ', y = ', y);
+ 
+readln
+end.
+
+2)
+MOV EBX, y
+ 
+MOV AL, 0
+XLAT
+MOV x[0], AL
+ 
+MOV AL, 1
+XLAT
+MOV x[1], AL
+ 
+MOV AL, 2
+XLAT
+MOV x[2], AL
